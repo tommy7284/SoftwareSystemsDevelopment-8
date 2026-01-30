@@ -4,6 +4,7 @@ function App() {
         <Container>
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
+                    <Addheader/>
                     <TodoListCard />
                 </Col>
             </Row>
@@ -64,6 +65,12 @@ function TodoListCard() {
                 />
             ))}
         </React.Fragment>
+    );
+}
+
+function Addheader() {
+    return (
+        <h1 className="text-center my-4">ToDo app by SatoruTomizawa</h1>
     );
 }
 
